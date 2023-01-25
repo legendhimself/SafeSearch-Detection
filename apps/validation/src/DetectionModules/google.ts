@@ -1,5 +1,6 @@
 import { ImageAnnotatorClient } from '@google-cloud/vision';
-import { fetchBuffer } from 'libs';
+import { fetchBuffer } from '@libs';
+
 // refer https://cloud.google.com/vision/docs/reference/rpc/google.cloud.vision.v1#likelihood
 const annotations = ['VERY_LIKELY', 'LIKELY', 'POSSIBLE'];
 

@@ -16,6 +16,7 @@ export const fetchBuffer = async (input: string | Buffer): Promise<Buffer> => {
   if (Buffer.isBuffer(input)) return input;
   if (typeof input === 'string' && input.startsWith('http')) {
     const res = await request(input);
+    if (res.statusCode !== 200) throw new Error('Invalid input');
     const arrBuffer = await res.body.arrayBuffer();
     return Buffer.from(arrBuffer);
   }

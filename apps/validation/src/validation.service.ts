@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { s3 } from 'libs';
+import { s3 } from '@libs';
 
 @Injectable()
 export class ImageValidationService {

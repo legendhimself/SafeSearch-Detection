@@ -1,7 +1,7 @@
 import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { Client, ClientProxy, Transport } from '@nestjs/microservices';
-import { s3, fetchBuffer } from 'libs';
+import { s3, fetchBuffer } from '@libs';
 import { v4 as uuidv4 } from 'uuid';
 
 const logger = new Logger('ImageService');

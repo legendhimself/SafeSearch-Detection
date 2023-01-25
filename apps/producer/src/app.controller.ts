@@ -1,7 +1,7 @@
 import { Body, Controller, HttpCode, Put } from '@nestjs/common';
 import { ImageService } from './detection/image.service';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UrlDto } from 'libs';
+import { UrlDto } from '@libs';
 
 @ApiTags('Image')
 @Controller('image')

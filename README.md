@@ -143,6 +143,22 @@ You can make request to the API using the following endpoints:
 
 > **Note** The RabbitMQ queue is of durable type, so if the validationService is not running, the messages will be stored in the queue and will be consumed when the validation service is up and running.
 
+You can also test the API using the swagger UI at `http://localhost:<port>/api`
+
+Testing with cli
+
+### Unit Testing
+
+```sh
+yarn test
+```
+
+### End to End Testing
+
+```sh
+yarn test:e2e
+```
+
 ## Detection Strictness
 
 AWS - You can change the strictness of the detection by changing the `allowedSecondLevelLabels` and `allowedTopLevelLabels` in the [aws.ts](/apps/validation/src/DetectionModules/aws.ts) file.
@@ -152,5 +168,5 @@ Google - You can change the strictness of the detection by changing the `annotat
 ## Todo:
 
 - [ ] Complete the Free API
-- [ ] Add more tests and e2e tests
+- [x] Add more tests and e2e tests
 - [ ] Add more documentation
