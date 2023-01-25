@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "outDir": "../../dist/apps/producer"
+  },
+  "include": ["src/**/*", "process-env.d.ts"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+}

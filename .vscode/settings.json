@@ -1,0 +1,23 @@
+{
+  "files.eol": "\n",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  "editor.useTabStops": true,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "cSpell.words": [
+    "Fastify",
+    "microservices",
+    "nestjs",
+    "RABBITMQ",
+    "undici",
+    "uuidv"
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
