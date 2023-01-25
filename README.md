@@ -44,7 +44,6 @@ stateDiagram-v2
 [*] --> apps
 apps --> validation
 validation --> src
-validation --> test
 src --> DetectionModules
 DetectionModules --> aws
 DetectionModules --> google
@@ -55,9 +54,6 @@ src --> validation.module
 src --> validation.service
 src --> main
 src --> tsconfig.app.json
-
-test --> app.e2e.spec
-test --> jeste2e.json
 ```
 
 ---
