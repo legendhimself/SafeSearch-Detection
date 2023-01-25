@@ -156,6 +156,8 @@ yarn test
 ### End to End Testing
 
 ```sh
+yarn start:dev:validation
+# open new terminal
 yarn test:e2e
 ```
 
