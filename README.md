@@ -9,7 +9,8 @@ The detection can be done in three ways:
 2. Google Vision
 3. Free API (Tensorflow)
 
-> **Note:** The free API is not ready yet.
+> **Note**
+The free API is not ready yet.
 
 The detection can be switched from the `validation.controller.ts` file.
 It is advised to use the AWS Rekognition as it is the most accurate, verbose and is directly integrated with AWS S3.
