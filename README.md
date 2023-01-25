@@ -10,7 +10,7 @@ The detection can be done in three ways:
 3. Free API (Tensorflow)
 
 > **Note**
-The free API is not ready yet.
+> The free API is not ready yet.
 
 The detection can be switched from the `validation.controller.ts` file.
 It is advised to use the AWS Rekognition as it is the most accurate, verbose and is directly integrated with AWS S3.
@@ -87,6 +87,9 @@ cp .env.example .env
 # Edit the .env file
 ```
 
+> **Note**
+> Download the Google Service Account Key for Cloud Vision and add it to the root directory and add the file name to `.env` `credFileName=filename.json`
+
 ### Development
 
 ---
@@ -130,3 +133,14 @@ yarn start:prod:producer
 ```sh
 yarn start:prod:validation
 ```
+
+## Detection Strictness
+
+AWS - You can change the strictness of the detection by changing the `allowedSecondLevelLabels` and `allowedTopLevelLabels` in the [aws.ts](/apps/validation/src/DetectionModules/aws.ts) file.
+Google - You can change the strictness of the detection by changing the `annotations` in the [google.ts](/apps/validation/src/DetectionModules/google.ts) file.
+
+## Todo:
+
+- [ ] Complete the Free API
+- [ ] Add more tests and e2e tests
+- [ ] Add more documentation

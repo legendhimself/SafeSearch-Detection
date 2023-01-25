@@ -7,7 +7,7 @@ const rekognition = new Rekognition({
 });
 
 // update the allowed labels
-// https://docs.aws.amazon.com/rekognition/latest/dg/moderation.html
+// refer https://docs.aws.amazon.com/rekognition/latest/dg/moderation.html
 const allowedTopLevelLabels = ['Gambling', 'Tobacco'];
 const allowedSecondLevelLabels = [
   'Female Swimwear Or Underwear',
