@@ -12,7 +12,7 @@ The detection can be done in three ways:
 > **Note**
 > The free API is not ready yet.
 
-The detection can be switched from the `validation.controller.ts` file.
+The detection can be switched from the [`validation.controller.ts`](./apps/validation/src/validation.controller.ts) file.
 It is advised to use the AWS Rekognition as it is the most accurate, verbose and is directly integrated with AWS S3.
 
 ## Project Structure

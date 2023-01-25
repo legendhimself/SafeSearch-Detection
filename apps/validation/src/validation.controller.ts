@@ -7,6 +7,7 @@ export class ValidationController {
   constructor(private readonly imageService: ImageValidationService) {}
   @EventPattern('imageAdded')
   async imageAdded(imageUrl: string) {
+    // choose the validation module
     const validate = await this.imageService.validateImage(imageUrl, 'aws');
     console.log(validate);
   }
