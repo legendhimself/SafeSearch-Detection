@@ -25,10 +25,6 @@ export class ImageService implements OnModuleInit {
     logger.log('Connected to RabbitMQ');
   }
 
-  testImageDetection(imageUrl: string) {
-    this.client.emit('imageAdded', imageUrl);
-  }
-
   async addImage(url: string): Promise<string | boolean> {
     const imageUrl = await this.addImageToBucket(url);
     if (!imageUrl) return false;

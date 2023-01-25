@@ -134,6 +134,15 @@ yarn start:prod:producer
 yarn start:prod:validation
 ```
 
+## Testing the API
+
+You can make request to the API using the following endpoints:
+
+- `http://localhost:<port>/image/upload` - To add an image to the to the s3 bucket. Requires URL of the image in the body.
+  The above endpoint will return success and s3 responseURL. If the image is not safe, it will delete the image from the s3 bucket in a few seconds.
+
+> **Note** The RabbitMQ queue is of durable type, so if the validationService is not running, the messages will be stored in the queue and will be consumed when the validation service is up and running.
+
 ## Detection Strictness
 
 AWS - You can change the strictness of the detection by changing the `allowedSecondLevelLabels` and `allowedTopLevelLabels` in the [aws.ts](/apps/validation/src/DetectionModules/aws.ts) file.

@@ -21,15 +21,4 @@ export class AppController {
     const respUrl = await this.imageService.addImage(url);
     return { success: !!respUrl, ...(respUrl && { respUrl }) };
   }
-
-  @ApiResponse({
-    status: 200,
-    description: 'test.',
-  })
-  @HttpCode(200)
-  @Put('test')
-  async test(@Body() { url }: UrlDto) {
-    this.imageService.testImageDetection(url);
-    return { success: true };
-  }
 }
