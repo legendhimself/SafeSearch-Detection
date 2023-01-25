@@ -137,6 +137,7 @@ yarn start:prod:validation
 ## Detection Strictness
 
 AWS - You can change the strictness of the detection by changing the `allowedSecondLevelLabels` and `allowedTopLevelLabels` in the [aws.ts](/apps/validation/src/DetectionModules/aws.ts) file.
+
 Google - You can change the strictness of the detection by changing the `annotations` in the [google.ts](/apps/validation/src/DetectionModules/google.ts) file.
 
 ## Todo:
